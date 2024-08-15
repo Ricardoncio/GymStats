@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GymStats</title>
-    <link rel="stylesheet" href="style.css">
+    <title>GymStats - Menu</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
@@ -16,15 +16,22 @@
     <div id="divContainer">
         <div id="formDiv">
             <h1>GymStats</h1>
+            <div id="navBar">
+                <!--CAMBIAR-->
+                <button onclick="window.location.href='../menu/menu.html'">Stats</button>
+                <!--CAMBIAR-->
+                <button onclick="window.location.href='../menu/menu.html'">Today's routine</button>
+                <button id="disconnectBtn" onclick="window.location.href='../index.html'">Disconnect</button>
+            </div>
             <form action="" method="" id="dataForm">
                 <div class="field">
-                    <label for="username">Nombre de usuario:</label>
-                    <input id="username" name="username" type="text">
+                    <label for="exerciseName">Nombre del ejercicio:</label>
+                    <input id="exerciseName" name="exerciseName" type="text">
                 </div>
                 <input id="submitBtn" type="submit" value="Next">
             </form>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>

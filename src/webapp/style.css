@@ -25,7 +25,7 @@ h1,h2 {
     margin-bottom: 30px;
 }
 
-div:not(#divContainer,#setsDiv,.field) {
+div:not(#divContainer,#setsDiv,#navBar,.field) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -65,14 +65,15 @@ div.field select {
     text-align: center;
 }
 
-#submitBtn,#deleteBtn {
+#submitBtn,button {
     width: 100px;
     height: 36px;
     transition: 0.6s;
     border-width: 1px;
+    font-size: 12px;
 }
 
-#submitBtn:hover,#deleteBtn:hover {
+#submitBtn:hover,button:hover {
     background-color: green;
     color: white;
 }
@@ -90,6 +91,12 @@ div.field select {
     margin-bottom: 0;
 }
 
+#navBar {
+    margin: 0 0 30px 0 !important;
+    display: flex;
+    gap: 15px;
+}
+
 @media screen and (max-width: 500px) {
     #divContainer {
         width: 80%;
@@ -100,7 +107,7 @@ div.field select {
         font-size: 25px;
     }
     #divContainer {
-        width: 50%;
+        width: 60%;
     }
     div.field input {
         width: 120px;
@@ -112,9 +119,10 @@ div.field select {
         height: 51px;
         text-align: center;
     }   
-    #submitBtn,#deleteBtn {
+    #submitBtn,button {
         width: 135px;
         height: 51px;
+        font-size: 18px;
     }
 }
 @media screen and (min-width: 1201px) {

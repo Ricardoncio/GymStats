@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GymStats - exercise</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="exercise.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="divContainer">
+        <div id="formDiv">
+            <h1>GymStats</h1>
+            <div id="navBar">
+                <button id="menuBtn" onclick="window.location.href='../menu/menu.html'">Menu</button>
+                <button id="disconnectBtn" onclick="window.location.href='../index.html'">Disconnect</button>
+            </div>
+            <form action="" method="" id="dataForm">
+                <div class="field">
+                    <label for="exerciseType">Tipo:</label>
+                    <select name="exerciseType" id="exerciseType">
+                        <option value="bar">Barra</option>
+                        <option value="dumbells">Mancuernas</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="reps">Número de repes:</label>
+                    <input id="reps" name="reps" type="number" min="0">
+                </div>
+                <div class="field">
+                    <label for="weight">Kilos por lado:</label>
+                    <input id="weight" name="weight" type="number" min="0">
+                </div>
+                <input id="submitBtn" type="submit" value="Add set">
+            </form>
+        </div>
+    </div>
+    <script src="exercise.js"></script>
+</body>
+</html>
