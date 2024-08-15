@@ -1,0 +1,37 @@
+15-Aug-2024 14:31:34.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.1.28
+15-Aug-2024 14:31:34.538 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Aug 2 2024 15:14:43 UTC
+15-Aug-2024 14:31:34.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.1.28.0
+15-Aug-2024 14:31:34.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+15-Aug-2024 14:31:34.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+15-Aug-2024 14:31:34.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+15-Aug-2024 14:31:34.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Users\rsolo\.jdks\openjdk-21.0.1
+15-Aug-2024 14:31:34.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.1+12-29
+15-Aug-2024 14:31:34.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+15-Aug-2024 14:31:34.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\rsolo\IdeaProjects\GymStats
+15-Aug-2024 14:31:34.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\rsolo\IdeaProjects\apache-tomcat-10.1.28
+15-Aug-2024 14:31:34.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Aug-2024 14:31:34.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+15-Aug-2024 14:31:34.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+15-Aug-2024 14:31:34.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+15-Aug-2024 14:31:34.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Aug-2024 14:31:34.558 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\rsolo\IdeaProjects\apache-tomcat-10.1.28
+15-Aug-2024 14:31:34.558 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\rsolo\IdeaProjects\GymStats
+15-Aug-2024 14:31:34.558 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\rsolo\IdeaProjects\GymStats\temp
+15-Aug-2024 14:31:34.558 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\rsolo\IdeaProjects\GymStats\conf\logging.properties
+15-Aug-2024 14:31:34.558 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Aug-2024 14:31:34.558 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.1\lib\idea_rt.jar=62511:C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.1\bin
+15-Aug-2024 14:31:34.558 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dfile.encoding=UTF-8
+15-Aug-2024 14:31:34.559 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dsun.stdout.encoding=UTF-8
+15-Aug-2024 14:31:34.559 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dsun.stderr.encoding=UTF-8
+15-Aug-2024 14:31:34.566 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [2.0.8] con la versión APR [1.7.4].
+15-Aug-2024 14:31:34.581 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+15-Aug-2024 14:31:35.280 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+15-Aug-2024 14:31:35.395 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1132] milliseconds
+15-Aug-2024 14:31:35.465 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+15-Aug-2024 14:31:35.465 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.28]
+15-Aug-2024 14:31:35.479 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\rsolo\IdeaProjects\GymStats\conf\Catalina\localhost\GymStats.xml]
+15-Aug-2024 14:31:36.038 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+15-Aug-2024 14:31:36.105 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\rsolo\IdeaProjects\GymStats\conf\Catalina\localhost\GymStats.xml] has finished in [624] ms
+15-Aug-2024 14:31:36.111 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+15-Aug-2024 14:31:36.144 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [746] milliseconds

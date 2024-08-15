@@ -1,0 +1,127 @@
+body {
+    background-image: url("https://mrwallpaper.com/images/high/powerful-and-determined-woman-lifting-weights-at-4k-gym-c38r3vww1i62mcwo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Moderustic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,h2 {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#divContainer {
+    margin-bottom: 30px;
+}
+
+div:not(#divContainer,#setsDiv,.field) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 15px;
+}
+
+div.field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+div.field input {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+}
+
+div.field select {
+    width: 88px;
+    height: 36px;
+    text-align: center;
+}
+
+#submitBtn,#deleteBtn {
+    width: 100px;
+    height: 36px;
+    transition: 0.6s;
+    border-width: 1px;
+}
+
+#submitBtn:hover,#deleteBtn:hover {
+    background-color: green;
+    color: white;
+}
+
+#routineDiv {
+    gap: 15px;
+}
+
+#routineDiv p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+#routineDiv h2 {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+    #divContainer {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 1200px) {
+    body {
+        font-size: 25px;
+    }
+    #divContainer {
+        width: 50%;
+    }
+    div.field input {
+        width: 120px;
+        height: 45px;
+        text-align: center;
+    }
+    div.field select {
+        width: 128px;
+        height: 51px;
+        text-align: center;
+    }   
+    #submitBtn,#deleteBtn {
+        width: 135px;
+        height: 51px;
+    }
+}
+@media screen and (min-width: 1201px) {
+    body {
+        font-size: 25px;
+    }
+    #divContainer {
+        width: 30%;
+    }
+}
