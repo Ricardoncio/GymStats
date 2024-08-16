@@ -7,6 +7,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import models.Routine;
 import models.User;
 
 import java.io.IOException;
@@ -26,7 +27,7 @@ public class LoginServlet extends HttpServlet {
         resp.setCharacterEncoding("UTF-8");
         if (!username.isEmpty() && !password.isEmpty()) {
             if (LoginDAO.login(username,password)) {
-                User user = new User(username, new ArrayList<>());
+                User user = new User(username, new Routine());
                 responseJSON = new Gson().toJson(user);
                 PrintWriter pw = resp.getWriter();
                 pw.print(responseJSON);

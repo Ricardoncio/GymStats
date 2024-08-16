@@ -1,5 +1,12 @@
+function redirect() {
+    if (!localStorage.getItem("user")) {
+        window.location.href = "../index.html";
+    }
+}
+redirect();
+
 document.getElementById("disconnectBtn").addEventListener("click", () => {
-    localStorage.removeItem("username");
+    localStorage.removeItem("user");
 })
 
 document.getElementById("dataForm").addEventListener("submit", function (event) {
@@ -9,10 +16,9 @@ document.getElementById("dataForm").addEventListener("submit", function (event) 
     formData.forEach((value, key) => {
         formBody.append(key, value);
     })
-    const exerciseName = formBody.get("exerciseName");
-    localStorage.setItem("exerciseName", exerciseName);
-    if (!localStorage.getItem(exerciseName)) {
-        localStorage.setItem(exerciseName, JSON.stringify({}));
+    const selectedExercise = formBody.get("selectedExercise");
+    if (selectedExercise.length !== 0) {
+        localStorage.setItem("selectedExercise", selectedExercise);
+        window.location.href = "../exercise/exercise.html";
     }
-    window.location.href = "../exercise/exercise.html";
 })

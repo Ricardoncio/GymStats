@@ -1,6 +1,6 @@
 const user = localStorage.getItem("user");
 if (user) {
-    localStorage.removeItem("user");
+    window.location.href = "./menu/menu.html";
 }
 
 document.getElementById("dataForm").addEventListener("submit", async function (event) {

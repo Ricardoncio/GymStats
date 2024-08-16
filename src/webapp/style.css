@@ -101,6 +101,10 @@ div.field select {
     color: red;
 }
 
+#disconnectBtn:hover,#deleteBtn:hover {
+    background-color: red;
+}
+
 @media screen and (max-width: 500px) {
     #divContainer {
         width: 80%;
