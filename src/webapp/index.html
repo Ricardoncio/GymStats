@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymStats</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
@@ -16,15 +17,19 @@
     <div id="divContainer">
         <div id="formDiv">
             <h1>GymStats</h1>
-            <form action="" method="" id="dataForm">
+            <form action="./login" method="POST" id="dataForm">
                 <div class="field">
-                    <label for="username">Nombre de usuario:</label>
+                    <label for="username">Username:</label>
                     <input id="username" name="username" type="text">
                 </div>
-                <input id="submitBtn" type="submit" value="Next">
+                <div class="field">
+                    <label for="password">Password:</label>
+                    <input id="password" name="password" type="password">
+                </div>
+                <input id="submitBtn" type="submit" value="Log in">
             </form>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

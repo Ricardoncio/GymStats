@@ -97,6 +97,10 @@ div.field select {
     gap: 15px;
 }
 
+#errorMsg {
+    color: red;
+}
+
 @media screen and (max-width: 500px) {
     #divContainer {
         width: 80%;

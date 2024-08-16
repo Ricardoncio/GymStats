@@ -1,0 +1,9 @@
+.field {
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+
+input:not(#submitBtn) {
+    width: calc(100% - 8px);
+    text-align: left;
+}
