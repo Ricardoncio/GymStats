@@ -15,7 +15,7 @@ function showRoutine() {
         newDiv.id = "routineDiv";
         document.getElementById("divContainer").appendChild(newDiv);
         const name = document.createElement("h2");
-        name.innerText = localStorage.getItem("selectedExercise");
+        name.innerText = localStorage.getItem("selectedExercise").replaceAll("_"," ");
         newDiv.appendChild(name);
         const setsDiv = document.createElement("div");
         setsDiv.id = "setsDiv";
