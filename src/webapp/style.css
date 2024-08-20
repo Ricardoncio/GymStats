@@ -97,6 +97,10 @@ div.field select {
     gap: 15px;
 }
 
+#okMsg {
+    color: darkgreen;
+}
+
 #errorMsg {
     color: red;
 }

@@ -73,7 +73,7 @@ document.getElementById("dataForm").addEventListener('submit', function(event) {
     }
 
     /* Introducing the set into the specific exercise */
-    user["routine"][selectedExercise].push(formBody.get("reps") + "x" + weight + "kg");
+    user["routine"][selectedExercise].push(formBody.get("reps") + "x" + weight);
     localStorage.setItem("user", JSON.stringify(user));
     removeRoutineDiv();
     showRoutine();

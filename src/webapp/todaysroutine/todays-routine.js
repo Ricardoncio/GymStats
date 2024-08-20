@@ -17,7 +17,7 @@ function showRoutine() {
             newDiv.appendChild(setsDiv);
             for (let set in routineJSON[exercise]) {
                 const setText = document.createElement("p");
-                setText.textContent = (parseInt(set) + 1) + "º: " + routineJSON[exercise][set];
+                setText.textContent = (parseInt(set) + 1) + "º: " + routineJSON[exercise][set] + "kg";
                 setsDiv.appendChild(setText);
             }
         }
@@ -27,7 +27,6 @@ function showRoutine() {
         submitBtn.value = "Save routine";
         newDiv.appendChild(submitBtn);
         submitBtn.addEventListener("click", async () => {
-            console.log("entro")
             event.preventDefault();
             const formBody = new URLSearchParams();
             for (let key in routineJSON) {
@@ -35,32 +34,27 @@ function showRoutine() {
             }
 
             try {
-                const response = await fetch(this.action, {
-                    method: this.method,
+                const response = await fetch(form.action, {
+                    method: form.method,
                     headers: {
                         'Accept': 'application/json',
                         'Content-Type': 'application/x-www-form-urlencoded'
                     },
                     body: formBody.toString()
                 });
-                console.log("llego hasta aqui")
                 const responseText = document.createElement("p");
                 document.getElementById("routineDiv").appendChild(responseText);
                 if (response.ok) {
                     responseText.textContent = "¡Routine saved successfully!"
+                    responseText.id = "okMsg";
                 } else {
-                    responseText.textContent = "Sorry, something went wrong"
+                    responseText.textContent = "Sorry something went wrong"
+                    responseText.id = "errorMsg";
                     throw new Error('Something went wrong... ' + response.statusText);
                 }
 
             } catch (error) {
                 console.error('Error:', error);
-                let errorMsg = document.getElementById("errorMsg");
-                if (!errorMsg) {
-                    errorMsg = document.createElement("p");
-                    errorMsg.id = "errorMsg";
-                    document.getElementById("formDiv").appendChild(errorMsg);
-                }
             }
         });
     }

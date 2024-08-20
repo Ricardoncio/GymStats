@@ -1,6 +1,6 @@
 package servlets;
 
-import com.google.gson.Gson;
+import DAOs.RoutineDAO;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -10,13 +10,14 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Map;
 
-@WebServlet(name = "SaveRoutineServlet", urlPatterns = "/save-routine")
+@WebServlet(name = "SaveRoutineServlet", urlPatterns = "/saveRoutine")
 public class SaveRoutineServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("entro");
         Map<String,String[]> params = req.getParameterMap();
-        System.out.println(params);
+        params.forEach((key,value) -> System.out.println(key + " = " + value[0]));
+
+        RoutineDAO.saveRoutine(params);
     }
 }
